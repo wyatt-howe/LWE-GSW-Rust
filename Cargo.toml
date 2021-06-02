@@ -1,0 +1,15 @@
+[package]
+name = "libgsw"
+version = "0.1.0"
+authors = ["Wyatt Howe <whowe@bu.edu"]
+edition = "2018"
+
+[dependencies]
+rand = "0.8.3"
+rand_distr = ""
+rulinalg = { path = "algebra/rulinalg-0.4.2" }  # modified for modular arithmetic
+criterion = "0.3"
+
+[[bench]]
+name = "lwe"
+harness = false
